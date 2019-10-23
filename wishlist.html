@@ -1,0 +1,73 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="wishlist.css">
+
+    </head>
+    <body>
+        <div class="headdiv" >
+        <div >
+          <center><p style="color: aliceblue; font-size: 50px; font-style: italic"> My courses</p></center> 
+        </div><br>
+<div class="change">
+    <center>
+<a onclick="openA('iallc')">All courses</a>
+<a onclick="openA('iwish')">Wishlist</a>
+<a onclick="openA('iarch')">Archived</a>
+</center>
+</div>
+        </div>
+        <div style="padding: 20px;">
+        </div>
+
+        <div class="allcourse">
+         <div style="border-style: ridge;width: 200px;">
+          <div>
+              <img src="img1.jpg" alt="" style="height: 200px; width: 200px;" >
+          </div>
+          <i>Click to Start</i>
+         </div>
+        </div>
+
+        <div class="wishlist" style="display:none;">
+                <div style="border-style: ridge;width: 200px;">
+                 <div>
+                     <img src="img2.jpg" alt="" style="height: 200px; width: 200px;" >
+                 </div>
+                 <i>Click to Start</i>
+                </div>
+               </div>
+
+               <div class="archived" style="display:none;" >
+                    <div style="border-style: ridge;width: 200px;">
+                     <div>
+                         <img src="img3.jpg" alt="" style="height: 200px; width: 200px;" >
+                     </div>
+                     <i>Click to Start</i>
+                    </div>
+                   </div>
+                   <script>
+                   function openA(id){
+                    //    alert(id);
+                    var a = document.getElementsByClassName("allcourse")[0];
+                    var b = document.getElementsByClassName("wishlist")[0];
+                    var c = document.getElementsByClassName("archived")[0];
+                       if(id=="iallc"){
+                       a.style.display="inline";
+                       b.style.display="none";
+                       c.style.display="none";
+                       }
+                       if(id=="iwish"){
+                        a.style.display="none";
+                       b.style.display="inline";
+                       c.style.display="none";
+                       }
+                       if(id=="iarch"){
+                       c.style.display="inline";
+                       b.style.display="none";
+                       a.style.display="none";
+                       }
+                       
+                   }
+                   </script>
+    </body>
+</html>

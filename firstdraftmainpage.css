@@ -81,7 +81,8 @@ text-decoration: none;
         align-content: center;
         width: 100%;
         position:absolute;
-        background-color:#D1D0CE;
+		background-color:#D1D0CE;
+		top: 2400px;
    }
    .bottom table tr td{
 	padding:15px;
@@ -136,3 +137,65 @@ text-decoration: none;
 	/* #infoss{
 
 	} */
+
+        .feed1{
+			position: absolute;
+            padding-top:20px;
+			padding-left:10px;
+			margin-right: 4px;
+            top:1600px;
+            left:80px;
+            height:250px;
+            width:420px;
+            background-color:#ffffff;
+            box-shadow: 20px 20px 50px#BFC9CA;
+            color: rgb(0, 0, 0);
+            border-radius: 6px;
+            font-family: Comic Sans MS;
+            font-size: 17px;
+        }
+        .feed2{
+			position: absolute;
+            padding-top:20px;
+            padding-left:10px;
+			top:1850px;
+            left:800px;
+            height:250px;
+            width:420px;
+            background-color:#ffffff;
+            box-shadow: 20px 20px 50px#BFC9CA;
+            color:rgb(0, 0, 0);
+            border-radius: 6px;
+            font-family: Comic Sans MS;
+			font-size: 17px;
+		    
+            
+        }
+        .feed3{
+			position: absolute;
+
+            padding-top:20px;
+			padding-left:10px;
+			top:2100px;
+            left:80px;
+           
+            height:250px;
+            width:420px;
+            background-color:white;
+            box-shadow: 20px 20px 50px #BFC9CA;
+            color: black;
+            border-radius: 6px;
+            font-family: Comic Sans MS;
+			font-size: 17px;
+			float:right;
+            
+        }
+        .feedimage{
+            height:60%;
+            width:27.5%;
+            float:right;
+            position: relative;
+            right:5px;
+            border-radius: 4px;
+        }
+       

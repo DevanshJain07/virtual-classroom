@@ -1,0 +1,17 @@
+.headdiv{
+background: #440434;
+}
+
+.change a {
+    margin: 20px;
+    font-size: 30px;
+    border: block;
+    color:white;
+    text-decoration: none;
+}
+.change i:hover{
+    color: aqua;
+}
+/* .show{
+    display: none;
+} */
