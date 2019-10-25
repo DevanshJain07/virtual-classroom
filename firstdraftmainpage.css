@@ -78,11 +78,11 @@ text-decoration: none;
 			}
 		}
 .bottom{
-	position: relative;
+	position: absolute;
         align-content: center;
         width: 100%;
 		background-color:aliceblue;
-		top: 400px;
+		top: 1750px;
    }
    .bottom table tr td{
 	padding:15px;
@@ -134,11 +134,45 @@ text-decoration: none;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		font-style: oblique;
 	} 
-	#infoss{
-		-webkit-animation-name: delays;
-		-webkit-animation-delay: 2s;
+	#infoss1{
+		position: absolute;
+            padding-top:20px;
+			padding-left:10px;
+			margin-right: 4px;
+            top:800px;
+			left:0px;
+            height:250px;
+            width:400px;
+            font-family: Comic Sans MS;
+			font-size: 17px;
+			/* -webkit-animation-name: delays;
+		-webkit-animation-delay: 20s;
 animation-name: delays;
-animation-delay: 2s;
+animation-delay: 20s; */
+	}
+	#infoss2{
+		position: absolute;
+            padding-top:20px;
+            padding-left:10px;
+			top:800px;
+            left:430px;
+            height:250px;
+            width:400px;
+            font-family: Comic Sans MS;
+			font-size: 17px;
+	}
+	#infoss3{
+		position: absolute;
+		padding-top:20px;
+		padding-left:10px;
+		top:800px;
+		left:860px;
+		height:250px;
+		width:400px;
+		font-family: Comic Sans MS;
+		font-size: 17px;
+		float:right;
+		
 	}
 
         .feed1{
@@ -146,7 +180,7 @@ animation-delay: 2s;
             padding-top:20px;
 			padding-left:10px;
 			margin-right: 4px;
-            top:2100px;
+            top:1400px;
 			left:0px;
             height:250px;
             width:400px;
@@ -165,7 +199,7 @@ animation-delay: 20s;
 			position: absolute;
             padding-top:20px;
             padding-left:10px;
-			top:2100px;
+			top:1400px;
             left:430px;
             height:250px;
             width:400px;
@@ -180,12 +214,10 @@ animation-delay: 20s;
         }
         .feed3{
 			position: absolute;
-
             padding-top:20px;
 			padding-left:10px;
-			top:2100px;
+			top:1400px;
             left:860px;
-           
             height:250px;
             width:400px;
             background-color:white;
