@@ -1,12 +1,12 @@
 .headdiv{
-background: #440434;
+background:aliceblue;
 }
 
 .change a {
     margin: 20px;
     font-size: 30px;
     border: block;
-    color:white;
+    color:black;
     text-decoration: none;
 }
 .change i:hover{
