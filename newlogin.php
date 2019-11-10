@@ -123,6 +123,7 @@ a:hover{
     color: #6ec2e8;
 }
 </style>
+
         <script>
         function viewPassword(){
   var x = document.getElementById("pwd");
@@ -159,6 +160,8 @@ if(message!=""){
 }
   }
         </script>
+
+        
         <body>
             <div id = "id1">
                 <form name = "myForm" onsubmit = "validate()">
