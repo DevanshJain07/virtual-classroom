@@ -123,8 +123,8 @@
   <div class="bottom">
     <table>
         <tr>
-            <td> <a href = "#">Virtuality for business</a></td>
-            <td> <a href = "#">Teach on Virtuality</a></td>
+            <td> <a href = "teachforbusiness.html">Virtuality for business</a></td>
+            <td> <a href = "teachonvirtuality.html">Teach on Virtuality</a></td>
             <td> <a href = "Aboutus.html">About us</a></td>
         </tr>
         <tr>

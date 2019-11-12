@@ -161,7 +161,7 @@ if(message!=""){
   }
         </script>
 
-        
+
         <body>
             <div id = "id1">
                 <form name = "myForm" onsubmit = "validate()">
@@ -173,7 +173,7 @@ if(message!=""){
                 <div id="lower"><br>
                         <input type="submit" value="Login"><br><br><br>
                        <pre>          or <a href = "#">Forgot password</a><br>
-     Don't have an account?<a href = "Signup.html">Sign up</a></pre>
+     Don't have an account?<a href = "Signup.php">Sign up</a></pre>
                         </div>
             </form>
             </div>
