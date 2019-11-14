@@ -21,9 +21,9 @@
     <div class="dropdown">
       <span><i class="fa fa-table" id="headcategories"></i>Categories</span>
       <div class="dropdown-content">
-        <a href="#">DEVELOPMENT</a>
-        <a href="#">MUSIC</a>
-        <a href="#">MANAGEMENT</a>
+        <a href="development.html">DEVELOPMENT</a>
+        <a href="music.html">MUSIC</a>
+        <a href="management.html">MANAGEMENT</a>
       </div>
     </div>
     <div class="dropdown">
@@ -34,24 +34,24 @@
     <div class="dropdown">
       <span>Teach on Virtuality</span>
       <div class="dropdown-content">
-        <a href="#">Learn more</a>
+        <a href="teachonvirtuality.html">Learn more</a>
       </div>
     </div>
 
     <div class="dropdown">
       <span><a href="livelectures.html">Live Lectures</a></span>
       <div class="dropdown-content">
-        <p>Live Lectures available</p>
+        <p>Free Live Lectures available</p>
       </div>
     </div>
 
 
 
     <div class="dropdown">
-      <span>My courses</span>
-      <div class="dropdown-content">
+      <span><a href="mycourses.php">My courses</a></span>
+      <!-- <div class="dropdown-content">
         <a href="#">AI</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="dropdown">
@@ -65,11 +65,11 @@
       <span><i class="fa fa-user-circle" style="margin-left: 20px;"></i></span>
       <div class="dropdown-content" style="margin-left: -150px;">
         <p><a href="purchasehistory.html">Purchase History</a></p>
-        <p><a href="wishlist.html">Wishlist</a></p>
-        <p><a href="settings.html">Profile</a></p>
+        <!-- <p><a href="wishlist.php">Wishlist</a></p> -->
+        <p><a href="userprofile.php">Profile</a></p>
         <p><a href="help1.html">Help</a></p>
-        <p><a href="notifications.html">Notifications</a></p>
-        <p><a href="logout.html">Logout</a></p>
+        <p><a href="notifications.php">Notifications</a></p>
+        <p><a href="logout.php">Logout</a></p>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@
   <div class="bottom">
     <table>
         <tr>
-            <td> <a href = "teachforbusiness.html">Virtuality for business</a></td>
+            <td> <a href = "virtualityforbusiness.html">Virtuality for business</a></td>
             <td> <a href = "teachonvirtuality.html">Teach on Virtuality</a></td>
             <td> <a href = "Aboutus.html">About us</a></td>
         </tr>
