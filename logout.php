@@ -21,9 +21,9 @@
     <div class="dropdown">
       <span><i class="fa fa-table" id="headcategories"></i>Categories</span>
       <div class="dropdown-content">
-        <a href="#">DEVELOPMENT</a>
-        <a href="#">MUSIC</a>
-        <a href="#">MANAGEMENT</a>
+        <a href="development.html">DEVELOPMENT</a>
+        <a href="music.html">MUSIC</a>
+        <a href="management.html">MANAGEMENT</a>
       </div>
     </div>
     <div class="dropdown">
@@ -57,20 +57,20 @@
     <div class="dropdown">
       <span><i class="fa fa-shopping-cart" style="margin-left: 15px;"></i></span>
       <div class="dropdown-content">
-        <a href="#"><i style="margin-right: 100px">Keep Shopping</i></a>
+        <a href="shopping.html"><i style="margin-right: 100px">Keep Shopping</i></a>
       </div>
     </div>
 
     <div class="dropdown">
       <span><i class="fa fa-user-circle" style="margin-left: 20px;"></i></span>
       <div class="dropdown-content" style="margin-left: -150px;">
+        <p><a href="userprofile.php">Profile</a></p>
         <p><a href="purchasehistory.html">Purchase History</a></p>
-        <p><a href="wishlist.html">Wishlist</a></p>
-        <p><a href="settings.html">Profile</a></p>
+        <p><a href="wishlist.php">Wishlist</a></p>
         <p><a href="help1.html">Help</a></p>
         <p><a href="notifications.html">Notifications</a></p>
-        <p><a href="newlogin.html">Login</a></p>
-        <p><a href="Signup.html">Signup</a></p>
+        <p><a href="index.php">Logout</a></p>
+
 
       </div>
     </div>

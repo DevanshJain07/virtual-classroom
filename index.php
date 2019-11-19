@@ -1,11 +1,17 @@
+<?php include('server.php'); 
+//if user is notlogged in,they cannot access this page
+if(empty($_SESSION['username'])){
+    header('location: logout.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
   <title>Virtuality</title>
+  <link rel="stylesheet" type="text/css" href="firstdraftmainpage.css">
   <link rel="stylesheet" type="text/css"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="firstdraftmainpage.css">
   <link rel="stylesheet" type="text/css"
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -57,7 +63,7 @@
     <div class="dropdown">
       <span><i class="fa fa-shopping-cart" style="margin-left: 15px;"></i></span>
       <div class="dropdown-content">
-        <a href="#"><i style="margin-right: 100px">Keep Shopping</i></a>
+        <a href="shopping.html"><i style="margin-right: 100px">Keep Shopping</i></a>
       </div>
     </div>
 
@@ -69,7 +75,9 @@
         <p><a href="userprofile.php">Profile</a></p>
         <p><a href="help1.html">Help</a></p>
         <p><a href="notifications.php">Notifications</a></p>
-        <p><a href="logout.php">Logout</a></p>
+        <p><a href="newlogin.php">Login</a></p>
+        <p><a href="Signup.php">Signup</a></p>
+
       </div>
     </div>
   </div>

@@ -1,184 +1,39 @@
+<?php include('server.php'); ?>
+
 <html>
     <head>
-        <title>Signup</title>
-<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
--->
-   <style>
-        * Basics */
-html, body {   
- width: 100%;   
-height: 100%;   
-font-family: "Helvetica Neue", Helvetica, sans-serif;   
-color: #444;   
--webkit-font-smoothing: antialiased;    background: #f0f0f0;
-}
-#id1 {
-position: fixed;
-width: 340px;
-height: 280px;
-top: 50%;
-left: 50%;
-margin-top: -140px;
-margin-left: -170px;
-background: #fff;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(124, 119, 119, 0.1);
-}
-form {
-    margin: 0 auto;
-    margin-top: 20px;
-}
-label {
-    color: #555;
-    display: inline-block;
-    margin-left: 18px;
-    padding-top: 10px;
-    font-size: 23px;
-}
-p a {
-    font-size: 11px;
-    color: #aaa;
-    float: right;
-    margin-top: -13px;
-    margin-right: 20px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
-}
-p a:hover {
-    color: #555;
-}
-input {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 12px;
-    outline: none;
-}
-input[type=text],
-input[type=password] {
-    color: #777;
-    padding-left: 10px;
-    margin: 10px;
-    margin-top: 12px;
-    margin-left: 18px;
-    width: 290px;
-    height: 35px;
-    border: 1px solid #c7d0d2;
-    border-radius: 2px;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
-}
-input[type=text]:hover,
-input[type=password]:hover {
-    border: 1px solid #b6bfc0;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
-}
-input[type=text]:focus,
-input[type=password]:focus {
-    border: 1px solid #a8c9e4;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
-}
-input[type=submit]:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-}
-input[type=submit]:active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-}
-#lower {
-    background: #f0ffff;
-    width: 340px;
-    height: 80px;
-    margin-top: 26.5px;
-}
-input[type=checkbox] {
-    margin-left: 20px;
-    margin-top: 30px;
-}
-.check {
-    margin-left: 3px;
-}
-input[type=submit] {
-    float: right;
-    margin-right: 125px;
-    margin-top: 1px;
-    width: 110px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #acd6ef; /*IE fallback*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
-    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-    border-radius: 30px;
-    border: 1px solid #66add6;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-    cursor: pointer;
-}
-</style>
-        <script>
-        function viewPassword(){
-  var x = document.getElementById("pwd");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
- }
-  function validate(){
-    var message = "";
-var x=document.forms["myForm"]["email"].value;
-if (x==null || x=="")
-  {
-  message+="Enter your email\n";
-  }
-  var c=document.forms["myForm"]["email"].value;
-var exp2 =/^[\w\-\.\+]+\@[a-z A-Z 0-9\.\-]+\.[a-z A-Z 0-9]{2,4}$/;
-if(c!=exp2){
-  message+="Enter email properly\n";
-}
-var y=document.forms["myForm"]["password"].value;
-  {
-if (y==null || y=="")
-  message+="Enter password\n";
- }
-var z=document.forms["myForm"]["password"].value;
-var exp = /^[a-z A-Z 0-9]+$/;
-if(z!=exp){
-  message+="Enter proper combinations for the password\n";
-}
-var d = document.forms["myForm"]["password"].value;
-if(d.length<2 || d.length>10){
-message+="The length for password should be between 2 to 10\n";
-} 
-if(message!=""){
- alert(message);
-}
-  }
-        </script>
-        <body>
-            <div id = "id1">
-                <form name = "myForm" onsubmit = "validate()">
-                <label for:"email">Enter Email</label>
-                <input type = "text" id = "email" name = "email"><br>
-                <label for:"password">Password</label>
-                <input type = "password" id = "pwd" name = "password"><br>
-                <input type = "checkbox" onClick = "viewPassword()">Show password<br>
-                <div id="lower"><br>
-                        <input type="submit" value="Signup">
-                        </div>
-            </form>
-            </div>
-            <i class="fab fa-instagram"></i>
-              </body>
+        <title>Register, login and logout user php mysql</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <body>
+        <div class="header">
+            <h1>Register, login and logout user php mysql</h1>
+        </div>
+    <form method="post" action="Signup.php">
+        <?php include('errors.php');?>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" class="textInput" value="<?php echo $username; ?>"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" class="textInput" value="<?php echo $email; ?>"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" class="textInput"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="password2" class="textInput"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="register_btn" class="Register"></td>
+            </tr>
+        </table>
+        <p>Already a member?<a href="newlogin.php">Sign in</p>
+    </form>
+    </body>
 </html>
